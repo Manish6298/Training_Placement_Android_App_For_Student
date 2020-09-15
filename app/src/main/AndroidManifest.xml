@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.student.studentapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AboutDevelopers"
+            android:parentActivityName=".DashBoardActivity"></activity>
+        <activity android:name=".RatingApp"
+            android:parentActivityName=".DashBoardActivity"/>
+        <activity android:name=".About_App"
+            android:parentActivityName=".DashBoardActivity"/>
+        <activity android:name=".TermsCondition"
+            android:parentActivityName=".DashBoardActivity"/>
+        <activity android:name=".UpdateStudentProfile" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".IntroActivity" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".DetailUpdateActivity" />
+        <activity android:name=".Fragment2" />
+        <activity android:name=".Fragment1" />
+        <activity android:name=".Resume2" />
+        <activity android:name=".Resume"
+            android:parentActivityName=".DashBoardActivity"/>
+        <activity android:name=".Quiz" />
+        <activity android:name=".Updates"
+            android:parentActivityName=".DashBoardActivity"/>
+        <activity android:name=".Videos" />
+        <activity android:name=".Profile"
+            android:parentActivityName=".DashBoardActivity" />
+        <activity
+            android:name=".DashBoardActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".SplashScreen"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

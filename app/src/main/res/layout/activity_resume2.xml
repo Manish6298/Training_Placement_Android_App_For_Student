@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Resume2">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+
+            <fragment
+                android:id="@+id/fragment"
+                android:name="com.student.studentapp.Fragment1"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:layout="@layout/activity_fragment1" />
+
+            <fragment
+                android:id="@+id/fragment2"
+                android:name="com.student.studentapp.Fragment2"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="ObsoleteLayoutParam"
+                tools:layout="@layout/activity_fragment2" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:autoLink="all"
+            android:fontFamily="@font/alegreya_sc"
+            android:inputType="textPersonName"
+            android:padding="20sp"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="#EB000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="HardcodedText,TextViewEdits" />
+
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70sp"
+            android:autoLink="all"
+            android:fontFamily="@font/alegreya_sc"
+            android:inputType="textPersonName"
+            android:paddingBottom="20sp"
+            android:text="Job title"
+            android:textAlignment="center"
+            android:textColor="#EB000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="HardcodedText,TextViewEdits" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="250sp"
+            android:layout_height="1sp"
+            android:layout_below="@id/t1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60sp"
+            android:background="@android:color/black"
+            tools:ignore="SmallSp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabAlignmentMode="center"
+        app:fabCradleRoundedCornerRadius="20dp"
+        app:fabCradleMargin="8sp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAlignment="center"
+        app:backgroundTint="#AEEA00"
+        app:fabCustomSize="60sp"
+        app:layout_anchor="@id/bottomAppBar"
+        app:maxImageSize="40sp"
+        app:srcCompat="@drawable/pdficon"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

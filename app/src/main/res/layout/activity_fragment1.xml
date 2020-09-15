@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#64DD17"
+    tools:context=".Fragment1">
+
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t3"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:inputType="textPostalAddress"
+            android:paddingTop="5sp"
+            android:paddingEnd="5sp"
+            android:text="Address"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="HardcodedText,RtlSymmetry,TextViewEdits"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/t17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:inputType="textMultiLine"
+            android:paddingTop="5sp"
+            android:paddingEnd="5sp"
+            android:text="City"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="HardcodedText,RtlSymmetry,TextViewEdits"
+            tools:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay3"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/t18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:inputType="textMultiLine"
+            android:paddingTop="5sp"
+            android:paddingEnd="5sp"
+            android:text="State"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="HardcodedText,RtlSymmetry,TextViewEdits"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/t19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:inputType="number"
+            android:paddingTop="5sp"
+            android:paddingEnd="5sp"
+            android:text="Pincode"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="HardcodedText,RtlSymmetry,TextViewEdits"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t4"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:autoLink="all"
+        android:inputType="textMultiLine"
+        android:paddingTop="5sp"
+        android:paddingEnd="5sp"
+        android:text="Email"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,RtlSymmetry,TextViewEdits"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:autoLink="all"
+        android:inputType="phone"
+        android:paddingTop="5sp"
+        android:paddingEnd="5sp"
+        android:text="Phone"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,RtlSymmetry,TextViewEdits"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/alegreya_sc"
+        android:padding="10sp"
+        android:text="Profile"
+        android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:autoLink="all"
+        android:inputType="date"
+        android:paddingTop="15sp"
+        android:paddingEnd="5sp"
+        android:text="DOB"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,RtlSymmetry,TextViewEdits"
+        tools:visibility="visible" />
+
+    <View
+        android:layout_width="120sp"
+        android:layout_height="1sp"
+        android:paddingEnd="10dp"
+        android:layout_below="@id/profile"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/black"
+        tools:ignore="RtlSymmetry,SmallSp" />
+
+
+</RelativeLayout>
